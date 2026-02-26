@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: agents
+  description: Forked from https://github.com/ed-donner/agents
+  annotations:
+    github.com/project-slug: Bandwidth/agents
+  organization: BW
+  costCenter: undefined
+  platformType: N/A
+  buildPlatform: GitHub Actions
+spec:
+  type: Service
+  owner: github/band-cx
+  lifecycle: Prototype
+  dependsOn:
+    - resource:platform/GitHub Actions
+    - resource:cost-center/undefined
